@@ -10,12 +10,12 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) fixed center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) fixed center no-repeat;
 }
 
 /* Sections */
 section {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .section-title {
@@ -24,12 +24,13 @@ section {
 }
 
 .title-light h2 {
-    font-size: 2.2rem;
-    color: var(--accent-color);
+    font-size: 2rem;
+    color: var(--secondary-color);
     position: relative;
     display: inline-block;
     padding-bottom: 15px;
     align-content: center;
+    font-weight: bold;
 }
 
 .title-light h2:after {
@@ -38,15 +39,18 @@ section {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 50px;
     height: 3px;
     background-color: var(--secondary-color);
 }
 
 /* Nav */
+#mainNav {
+    transition: 1s ease-in-out;
+}
 .nav-link{
     color: var(--secondary-color);
-    border-bottom: white 1px solid;
+    border-bottom: transparent 1px solid;
 }
 .nav-link.active {
     color: var(--accent-color);
@@ -54,7 +58,7 @@ section {
 }
 .nav-link:hover {
     color: var(--accent-color);
-    border-bottom: white 1px solid;
+    border-bottom: transparent 1px solid;
 }
 
 .bt-link{
@@ -87,9 +91,10 @@ section {
 
 header {
     color: white;
-    padding: 80px 0;
+    padding: 100px 0;
     text-align: center;
-    height: 100svh;
+    background: rgba(9, 9, 9, 0.4);
+    /*height: 100svh;*/
 }
 header .h1{
     color: var(--secondary-color);
@@ -105,8 +110,12 @@ header .h1{
     gap: 40px;
 }
 
-.about-text {
+#about p {
     flex: 1;
+}
+
+#about .badge {
+    background: var(--accent-color);
 }
 
 .about-image {
@@ -118,6 +127,57 @@ header .h1{
 
 .about-image img {
     width: 100%;
-    height: auto;
+    height: 350px;
     display: block;
 }
+
+/* Products Section */
+.products {
+    /*background-color: var(--light);*/
+}
+
+.product-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.category {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.5s;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+.category-img {
+    height: 160px;
+    overflow: hidden;
+}
+
+.category-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.category:hover .category-img img {
+    transform: scale(1.1);
+}
+
+.category-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.category-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Value Section */
