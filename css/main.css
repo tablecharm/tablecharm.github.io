@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #00249C;
+    --primary-color-50: rgba(255, 255, 255, 0.58);
+    --secondary-color: #E74E3E;
+    --accent-color: #6F1D45 ;
+    --lime-color: #A2D55E;
+    --yellow-color: #F8E300;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) fixed center;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title-light h2 {
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    align-content: center;
+}
+
+.title-light h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+/* Nav */
+.nav-link{
+    color: var(--secondary-color);
+    border-bottom: white 1px solid;
+}
+.nav-link.active {
+    color: var(--accent-color);
+    border-bottom: var(--accent-color) 1px solid;
+}
+.nav-link:hover {
+    color: var(--accent-color);
+    border-bottom: white 1px solid;
+}
+
+.bt-link{
+    background:transparent;
+    border:1px solid var(--secondary-color);
+    color:var(--secondary-color);
+    transition: ease-in-out 0.2s;
+}
+
+.bt-link:hover, .bt-link:focus{
+    background:var(--secondary-color);
+    border:1px solid var(--secondary-color);
+    color:white;
+}
+
+.bt-link-dark{
+    background:var(--secondary-color);
+    border:0;
+    color:white;
+    transition: ease-in-out 0.2s;
+}
+
+.bt-link-dark:hover, .bt-link-dark:active{
+    background:var(--accent-color);
+    border:1px solid var(--accent-color);
+    color:white;
+}
+
+/* Header */
+
+header {
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    height: 100svh;
+}
+header .h1{
+    color: var(--secondary-color);
+}
+@media (max-width:576px){.hero{padding:48px 0}}
+
+/* About Section */
+#about {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
