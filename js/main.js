@@ -1,14 +1,14 @@
 $('body').backstretch([
-    "images/bg/0.jpg",
-    "images/bg/1.jpg",
-    "images/bg/2.jpg",
-    "images/bg/3.jpg",
-    "images/bg/4.jpg",
-    "images/bg/5.jpg",
-    "images/bg/7.jpg",
-    "images/bg/8.jpg",
-    "images/bg/6.jpg",
-], {duration: 4500, fade: 850});
+    "images/slider/0.jpg",
+    "images/slider/8.jpg",
+    "images/slider/2.jpg",
+    "images/slider/3.jpg",
+    "images/slider/4.jpg",
+    "images/slider/1.jpg",
+    "images/slider/5.jpg",
+    "images/slider/6.jpg",
+    "images/slider/7.jpg",
+], {duration: 5500, fade: 850});
 
 $(window).on("scroll", function () {
     if ($(this).scrollTop() > 100) {

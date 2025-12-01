@@ -1,0 +1,14 @@
+:root {
+  --bg-primary: #2c3e50;
+  --bg-secondary: #e74c3c;
+  --bg-dark: #6F1D45 ;
+  --bg-lime: #A2D55E;
+  --bg-yellow: #F8E300;
+}
+
+body {
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) fixed center no-repeat;
+}
+
+@import 'bootstrap';
